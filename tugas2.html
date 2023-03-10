@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 </title>
+</head>
+<body>
+    <!-- Bhatito Sharoni Putra -->
+</body>
+<script>
+    let pegawai = "Bhatito";
+    let jabatan = "Manager";
+    let status = "lajang";
+    let gaji = 0;
+    switch(jabatan){
+        case 'Manager' : gaji = 10000000; break;
+        case 'Asisten Manager' : gaji = 8000000; break;
+        case 'Staff' : gaji = 5000000; break;
+    }
+    let tunjangan = gaji * 0.1;
+    let bpjs = gaji * 0.1;
+    let gaji1 = gaji + tunjangan +bpjs;
+    //Tunjangan keluarga bagi yang sudah menikah sebesar 10%
+    let tjkeluarga = 0;
+    if(status==='Lajang') 
+    tjkeluarga =  0;
+    else if(status==='Menikah') 
+    tjkeluarga = 0.1 * gaji;
+    let totalkeseluruhan = gaji1 + tjkeluarga;
+    document.write
+    (" Data Pendapatan  " +
+    "<hr/>"+
+    "<br>Pegawai : " + pegawai +
+    "<br>Jabatan : " + jabatan +
+    "<br>Status : " + status +
+    "<br>Tunjangan : " + tunjangan +
+    "<br>Tunjangan Keluarga : " + tjkeluarga+
+    "<br>Bpjs : " + bpjs +
+    "<br>Gaji Pokok : " + gaji+
+    "<br>Gaji Dengan Tunjangan Dan Bpjs : " + gaji1+
+    "<br>Total Gaji Keseluruhan  : " + totalkeseluruhan
+    );
+ 
+</script>
+</html>
