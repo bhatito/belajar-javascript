@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Kalkulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <center>
     <form id="kalkulator"  >
-    <table style="width: 50%;background-color: blue; border: solid; text-align: center;" border="">
-        <tr>
-            <td><strong>kalkulator</strong></td>
-        </tr>
+    <table style="width: 80%;background-color: rgb(22, 179, 87); border: solid; text-align: center;" border="">
+    <h1 style="align-items: center; font-style:italic " >
+        Kalkulator Sederhana
+    </h1>
     <td> Angka 1 :
     <input type="text" name="angka" placeholder="masukan angka pertama" id="angka"><br>
     </td>
@@ -21,21 +22,33 @@
     <input type="text" name="angka2" placeholder="masukan angka kedua" id="angka2"><br>
     </td>
     <td>
+    <br>
+    <br>
     Hasil : 
     <input type="text" name="hasil" value="" disabled> <br>
+    <br>
+    <br>
 </td>
 <td>
-    <button type="button" name="btn_tambah" onclick="tambah()">+</button><br>
-    <button type="button" name="btn_kurang" onclick="kurang()">-</button><br>
-    <button type="button" name="btn_bagi" onclick="pembagian()">/</button><br>
-    <button type="button" name="btn_kali" onclick="kali()">x</button><br>
-    <button type="button" name="btn_pangkat" onclick="pangkat()">^</button><br> 
+    <button type="button" class="operator btn btn-info" value="+" onclick="tambah()">+</button>
+    <button type="button" class="operator btn btn-info" value="-" onclick="kurang()">-</button>
+    <button type="button" class="operator btn btn-info" value="/" onclick="pembagian()">/</button>
+    <button type="button" class="operator btn btn-info" value="X" onclick="kali()">X</button>
+    <button type="button" class="operator btn btn-info" value="^" onclick="pangkat()">^</button>
 </td>
+<!-- 
+    <button type="button" class="operator btn btn-info" value="+" onclick="tambah()">+</button>
+    <button type="button" class="operator btn btn-info" value="-" onclick="kurang()">-</button>
+    <button type="button" class="operator btn btn-info" value="/" onclick="pembagian()">/</button>
+    <button type="button" class="operator btn btn-info" value="X" onclick="kali()">X</button>
+    <button type="button" class="operator btn btn-info" value="^" onclick="pangkat()">^</button>
+ -->
 </table>
 </form>
 </center>
-    <script src="js/kalkulator.js">
-
-    </script>
+    <script src="js/kalkulator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
