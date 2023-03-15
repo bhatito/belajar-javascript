@@ -17,7 +17,7 @@ function kurang() {
   var angka2 = parseFloat(frm.angka2.value);
   var total = angka - angka2;
   frm.hasil.value = total;
-x
+
   if (frm.angka.value != "" && frm.angka2.value != "") {
     return true;
   } else {
