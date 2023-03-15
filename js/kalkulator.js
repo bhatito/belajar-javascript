@@ -1,18 +1,58 @@
 function tambah() {
   var frm = document.getElementById("kalkulator");
-  var a1 = parseFloat(frm.angka.value);
-  var a2 = parseFloat(frm.angka2.value);
-  var total = a1 + a2;
+  var angka = parseFloat(frm.angka.value);
+  var angka2 = parseFloat(frm.angka2.value);
+  var total = angka + angka2;
   frm.hasil.value = total;
+  if (frm.angka.value != "" && frm.angka2.value != "") {
+    return true;
+  } else {
+    alert("Maaf angka belum terisi!");
+  }
 }
 
 function kurang() {
   var frm = document.getElementById("kalkulator");
-  var a1 = parseFloat(frm.angka.value);
-  var a2 = parseFloat(frm.angka2.value);
-  var total = a1 - a2;
+  var angka = parseFloat(frm.angka.value);
+  var angka2 = parseFloat(frm.angka2.value);
+  var total = angka - angka2;
   frm.hasil.value = total;
+x
+  if (frm.angka.value != "" && frm.angka2.value != "") {
+    return true;
+  } else {
+    alert("Maaf angka belum terisi!");
+  }
 }
+function kali() {
+  var frm = document.getElementById("kalkulator");
+  var angka = parseFloat(frm.angka.value);
+  var angka2 = parseFloat(frm.angka2.value);
+  var total = angka * angka2;
+  frm.hasil.value = total;
+
+  if (frm.angka.value != "" && frm.angka2.value != "") {
+    return true;
+  } else {
+    alert("Maaf angka belum terisi!");
+  }
+}
+function pembagian() {
+  var frm = document.getElementById("kalkulator");
+  var angka = parseFloat(frm.angka.value);
+  var angka2 = parseFloat(frm.angka2.value);
+  var total = angka / angka2;
+  frm.hasil.value = total;
+
+  if (frm.angka.value != "" && frm.angka2.value != "") {
+    return true;
+  } else {
+    alert("Maaf angka belum terisi!");
+  }
+}
+
+
+
 
 /*tugas ke 4 Javascript
 1. Lengkapilah form dari latihan 15js menggunakan CSS dan table 

@@ -3,9 +3,10 @@ function dataPerson() {
   let nama = forms.nama.value;
   let pekerjaan = forms.pekerjaan.value;
   let hobby = forms.hoby.value;
-  let data = `Input data :
+  let data = `
       <br> Nama: ${nama}
       <br> Pekerjaan: ${pekerjaan}
       <br> hobby : ${hobby}`;
   document.getElementById("hasil").innerHTML = data;
 }
+
